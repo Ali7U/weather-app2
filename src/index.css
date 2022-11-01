@@ -1,13 +1,84 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;700;800;900&family=Glory&family=Italianno&family=Karla:wght@200&family=Mukta:wght@300&family=Noto+Kufi+Arabic:wght@200&family=Outfit:wght@200&family=Overpass:wght@100&family=Poppins:wght@200&family=Quattrocento+Sans&family=Roboto&family=Tajawal&display=swap");
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+body {
+  font-family: "Outfit", sans-serif;
+}
+h2{
+  font-size: 3rem;
+}
+p{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.App {
+  width: 100%;
+  height: 100vh;
+  background-color: #7777;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App::before {
+  content: "";
+  background: url(./assets/photo-1525920980995-f8a382bf42c5.jpg) center
+    center/cover;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container{
+width: 370px;
+height: 400px;
+background-color: rgba(255, 255, 255, 0.1);
+border-radius: 15px;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+color: #333;
+}
+
+.cloud{
+  position: relative;
+  right: -90%;
+  transform-origin: 0 0;
+  transform: rotate(269deg);
+}
+
+.bottom{
+  width: 300px;
+  height: auto;
+background-color: rgba(255, 255, 255, 0.2);
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.search{
+  text-align: center;
+  padding: 1rem;
+}
+
+.search input{
+  font-size: 1.2rem;
+  padding: .7rem 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #f8f8f8;
+  border-radius: 25px;
+}
+::placeholder{
+  color: rgba(255, 255, 255, 0.5);
+
 }
